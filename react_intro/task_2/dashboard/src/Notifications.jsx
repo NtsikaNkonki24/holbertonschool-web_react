@@ -7,6 +7,7 @@ function Notifications() {
   const [isVisible, setIsVisible] = useState(true);
 
   const handleClose = () => {
+    console.log("Close button has been clicked");
     setIsVisible(false);
   };
 
@@ -27,12 +28,9 @@ function Notifications() {
       <ul>
         <li data-priority="default">New course available</li>
         <li data-priority="urgent">New resume available</li>
-        <li
-          data-priority="urgent"
-          dangerouslySetInnerHTML={{
-            __html: getLatestNotification(),
-          }}
-        />
+        <li data-priority="urgent">
+          <strong>urgent requirement</strong>
+        </li>
       </ul>
     </div>
   );
