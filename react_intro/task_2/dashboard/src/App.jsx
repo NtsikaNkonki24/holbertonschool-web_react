@@ -1,10 +1,12 @@
 import React from 'react';
 import './App.css';
 import logo from './assets/holberton-logo.jpg';
+import Notifications from './Notifications';
 
 function App() {
   return (
     <div className="App">
+       <Notifications />
       <header className="App-header">
         <img src={logo} alt="holberton logo" />
         <h1>School dashboard</h1>
